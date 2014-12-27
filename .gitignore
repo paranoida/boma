@@ -3,5 +3,6 @@ dist
 .tmp
 .sass-cache
 .ruby-version
+bower_components
 app/bower_components
 test/bower_components
