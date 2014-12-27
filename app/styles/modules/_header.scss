@@ -1,0 +1,68 @@
+// --- header -----------------------------------------------------------------
+
+.header {
+  @include transition(height .25s);
+  height: 600px;
+  background: url('images/bg-header.jpg') no-repeat 50% 0;
+  background-size: cover;
+}
+
+.header__container {
+  @extend %grid-container;
+  padding-left: $base-gap*4;
+  padding-right: $base-gap*4;
+  position: relative;
+  height: inherit;
+}
+
+.header__brand {
+  position: absolute;
+  top: 35px;
+  left: 40px;
+}
+
+.header__btn {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  margin-left: -140px;
+  width: 280px;
+  padding-left: 0;
+  padding-right: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+// --- media queries ----------------------------------------------------------
+
+@include min-screen($breakpoint-xlarge) {
+  .header {
+    height: 800px;
+  }
+}
+
+@include max-screen($breakpoint-small) {
+  .header__container {
+    padding: 35px 0 0;
+    text-align: center;
+  }
+
+  .header {
+    height: 350px;
+    background-position-x: 20%;
+  }
+
+  .header__brand {
+    position: static;
+    display: inline-block;
+  }
+
+  .header__btn {
+    margin-left: -105px;
+    width: 210px;
+    letter-spacing: 1px;
+    padding-top: $base-gap;
+    padding-bottom: $base-gap;
+    font-size: $font-size-medium
+  }
+}

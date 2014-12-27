@@ -1,0 +1,46 @@
+// --- nav --------------------------------------------------------------------
+
+.nav {
+  @extend %hidden-phone;
+  position: absolute;
+  top: 38px;
+  right: 40px;
+}
+
+.nav__list {
+  @extend %unstyled;
+}
+
+.nav__item {
+  display: inline-block;
+  padding-left: $base-gap*7;
+
+  &:first-child {
+    padding-left: 0;
+  }
+}
+
+.nav__link {
+  @include transition(border .25s);
+  color: $color-text;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  display: inline-block;
+  padding-bottom: 1px;
+  text-transform: uppercase;
+  outline: none;
+
+  &:hover {
+    text-decoration: none;
+    color: $color-text;
+    border-bottom-color: rgba($color-text, .5);
+  }
+}
+
+// --- media queries ----------------------------------------------------------
+
+@include max-screen($breakpoint-large) {
+  .nav__item {
+    padding-left: $base-gap*5;
+  }
+}

@@ -1,0 +1,29 @@
+// --- button -----------------------------------------------------------------
+
+.btn {
+  display: inline-block;
+  padding: $base-gap*1.5 $base-gap*3.5;
+  font-size: $font-size-large;
+  font-weight: 600;
+  line-height: $base-line-height;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: $color-white;
+  border: 2px solid $color-white;
+  background-color: transparent;
+  @include transition(background-color .25s);
+
+  &:hover,
+  &:active,
+  &.active {
+    background: rgba($color-white, .2);
+    color: $color-white;
+    text-decoration: none;
+  }
+
+  &.active,
+  &:active {
+    outline: 0;
+  }
+}

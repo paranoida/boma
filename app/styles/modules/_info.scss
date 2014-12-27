@@ -1,0 +1,101 @@
+// --- info -------------------------------------------------------------------
+
+.info {
+  // padding-top: $base-gap*3;
+  text-align: center;
+}
+
+.info__list {
+  @extend %unstyled;
+  @include clearfix;
+}
+
+.info__main-title {
+  font-size: $font-size-medium;
+  padding-bottom: 60px;
+}
+
+.info__item {
+  @extend %grid-25;
+  @extend %grid-columns-all;
+  position: relative;
+  font-size: 15px;
+}
+
+.info__title {
+  font-size: 20px;
+  line-height: 1;
+  padding-bottom: $base-gap*2;
+  font-weight: bold;
+}
+
+// --- media queries ----------------------------------------------------------
+
+@include max-screen($breakpoint-small) {
+  .info__item {
+    width: 100%;
+    padding: 0 0 $base-gap*2;
+  }
+}
+
+// --- info: contact ----------------------------------------------------------
+
+.info--contact {
+  .info__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  @include max-screen($breakpoint-small) {
+    .info__item {
+      padding-bottom: $base-gap*5;
+    }
+  }
+}
+
+// --- info: idx --------------------------------------------------------------
+
+.info--idx {
+  padding-bottom: $base-gap*4;
+
+  .info__item {
+    width: 33%;
+  }
+
+  .info__title {
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .info__title,
+  .info__text {
+    position: relative;
+    z-index: 10;
+  }
+
+  .info__idx {
+    font-size: 160px;
+    line-height: 1;
+    z-index: 5;
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 100%;
+    color: mix($color-text, $color-white, 5%);
+    font-family: georgia;
+  }
+
+  @include max-screen($breakpoint-small) {
+    .info__item {
+      padding-bottom: $base-gap*5;
+      width: 100%;
+    }
+
+    .info__idx {
+      font-size: 120px;
+      top: -25px;
+    }
+  }
+}
+

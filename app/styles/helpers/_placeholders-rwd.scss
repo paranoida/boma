@@ -1,0 +1,53 @@
+// --- placeholders: rwd ------------------------------------------------------
+
+%hidden-tablet {
+  @include max-screen($breakpoint-large) {
+    display: none;
+  }
+}
+
+%hidden-tablet-only {
+  display: block;
+
+  @include max-screen($breakpoint-large) {
+    display: none;
+  }
+
+  @include max-screen($breakpoint-small) {
+    display: block;
+  }
+}
+
+%hidden-phone {
+  @include max-screen($breakpoint-small) {
+    display: none;
+  }
+}
+
+%visible-tablet {
+  display: none;
+
+  @include max-screen($breakpoint-large) {
+    display: block;
+  }
+}
+
+%visible-tablet-only {
+  display: none;
+
+  @include max-screen($breakpoint-large) {
+    display: block;
+  }
+
+  @include max-screen($breakpoint-small) {
+    display: none;
+  }
+}
+
+%visible-phone {
+  display: none;
+
+  @include max-screen($breakpoint-small) {
+    display: block;
+  }
+}
