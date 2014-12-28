@@ -5,7 +5,7 @@ $cookies-bg: #2B2D2E;
 // --- cookies-bar ------------------------------------------------------------
 
 .cookies-bar {
-  padding: $base-gap*2;
+  padding: $base-gap*2 $base-gap*2 $base-gap*5 $base-gap*2;
   font-size: $font-size-small;
   background: $cookies-bg;
   color: mix($cookies-bg, $color-white, 50%);
@@ -25,4 +25,3 @@ $cookies-bg: #2B2D2E;
     text-decoration: none;
   }
 }
-

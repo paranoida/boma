@@ -6,19 +6,6 @@
   list-style: none;
 }
 
-%ellipsis {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-%general-title {
-  color: $color-text;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-bottom: $base-gap*2;
-}
-
 // --- placeholders: gmaps fix ------------------------------------------------
 
 %gmaps-fix {
