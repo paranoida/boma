@@ -20,7 +20,7 @@ gulp.task('styles', function () {
           console.log(error);
           this.emit('end');
         })
-        .pipe(gulp.dest('app'))
+        .pipe(gulp.dest('app/application.css'))
         .pipe($.size());
 });
 
