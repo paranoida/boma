@@ -162,7 +162,7 @@ a {
  */
 /* line 96, styles/base/_reset.scss */
 a:focus {
-  outline: thin dotted;
+  outline: none;
 }
 
 /**
@@ -763,87 +763,86 @@ sup {
   clear: both;
 }
 
-/* line 13, styles/modules/_info.scss */
+/* line 12, styles/modules/_info.scss */
 .info__main-title {
   font-size: 24px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
-/* line 18, styles/modules/_info.scss */
+/* line 17, styles/modules/_info.scss */
 .info__item {
   position: relative;
   font-size: 15px;
 }
 
-/* line 25, styles/modules/_info.scss */
+/* line 24, styles/modules/_info.scss */
 .info__title {
-  font-size: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
   line-height: 1;
   padding-bottom: 20px;
   font-weight: bold;
 }
 
+/* line 32, styles/modules/_info.scss */
+.info__text {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 767px) {
-  /* line 35, styles/modules/_info.scss */
+  /* line 39, styles/modules/_info.scss */
   .info__item {
     width: 100%;
     padding: 0 0 20px;
   }
 }
-/* line 44, styles/modules/_info.scss */
-.info--contact .info__title {
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
-}
 @media screen and (max-width: 767px) {
-  /* line 51, styles/modules/_info.scss */
+  /* line 49, styles/modules/_info.scss */
   .info--contact .info__item {
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+  }
+  /* line 52, styles/modules/_info.scss */
+  .info--contact .info__item:last-child {
+    padding-bottom: 0;
   }
 }
 
-/* line 59, styles/modules/_info.scss */
+/* line 61, styles/modules/_info.scss */
 .info--idx {
   padding-bottom: 40px;
 }
-/* line 62, styles/modules/_info.scss */
+/* line 64, styles/modules/_info.scss */
 .info--idx .info__item {
+  padding-top: 30px;
   width: 33%;
 }
-/* line 66, styles/modules/_info.scss */
-.info--idx .info__title {
-  font-size: 14px;
-  text-transform: uppercase;
-}
-/* line 72, styles/modules/_info.scss */
+/* line 70, styles/modules/_info.scss */
 .info--idx .info__title,
 .info--idx .info__text {
   position: relative;
   z-index: 10;
 }
-/* line 77, styles/modules/_info.scss */
+/* line 75, styles/modules/_info.scss */
 .info--idx .info__idx {
-  font-size: 160px;
+  font-size: 120px;
   line-height: 1;
   z-index: 5;
   position: absolute;
-  top: -55px;
+  top: -40px;
   left: 0;
   width: 100%;
   color: #f4f4f4;
   font-family: georgia;
 }
 @media screen and (max-width: 767px) {
-  /* line 90, styles/modules/_info.scss */
+  /* line 88, styles/modules/_info.scss */
   .info--idx .info__item {
     padding-bottom: 50px;
     width: 100%;
   }
-  /* line 95, styles/modules/_info.scss */
-  .info--idx .info__idx {
-    font-size: 120px;
-    top: -25px;
+  /* line 92, styles/modules/_info.scss */
+  .info--idx .info__item:last-child {
+    padding-bottom: 0;
   }
 }
 
