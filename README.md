@@ -1,4 +1,4 @@
-# Wimdu Jobs
+# BOMA
 
 ### Requirements:
 - sass + compass
