@@ -1,0 +1,28 @@
+// --- variables --------------------------------------------------------------
+
+$cookies-bg: #2B2D2E;
+
+// --- cookies-bar ------------------------------------------------------------
+
+.cookies-bar {
+  padding: $base-gap*2;
+  font-size: $font-size-small;
+  background: $cookies-bg;
+  color: mix($cookies-bg, $color-white, 50%);
+  position: relative;
+}
+
+.cookies-bar__close {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -10px;
+  color: mix($cookies-bg, $color-white, 40%);
+  font-size: $font-size-medium;
+
+  &:hover {
+    color: mix($cookies-bg, $color-white, 30%);
+    text-decoration: none;
+  }
+}
+
