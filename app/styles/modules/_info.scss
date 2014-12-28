@@ -1,7 +1,6 @@
 // --- info -------------------------------------------------------------------
 
 .info {
-  // padding-top: $base-gap*3;
   text-align: center;
 }
 
@@ -12,7 +11,7 @@
 
 .info__main-title {
   font-size: $font-size-medium;
-  padding-bottom: 60px;
+  padding-bottom: $base-gap*3;
 }
 
 .info__item {
@@ -23,10 +22,15 @@
 }
 
 .info__title {
-  font-size: 20px;
+  font-size: $font-size-small;
+  text-transform: uppercase;
   line-height: 1;
   padding-bottom: $base-gap*2;
   font-weight: bold;
+}
+
+.info__text {
+  margin-bottom: 0;
 }
 
 // --- media queries ----------------------------------------------------------
@@ -38,18 +42,16 @@
   }
 }
 
-// --- info: contact ----------------------------------------------------------
+// --- media queries ----------------------------------------------------------
 
 .info--contact {
-  .info__title {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-
   @include max-screen($breakpoint-small) {
     .info__item {
-      padding-bottom: $base-gap*5;
+      padding-bottom: $base-gap*4;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
   }
 }
@@ -60,12 +62,8 @@
   padding-bottom: $base-gap*4;
 
   .info__item {
+    padding-top: $base-gap*3;
     width: 33%;
-  }
-
-  .info__title {
-    font-size: 14px;
-    text-transform: uppercase;
   }
 
   .info__title,
@@ -75,11 +73,11 @@
   }
 
   .info__idx {
-    font-size: 160px;
+    font-size: 120px;
     line-height: 1;
     z-index: 5;
     position: absolute;
-    top: -55px;
+    top: -40px;
     left: 0;
     width: 100%;
     color: mix($color-text, $color-white, 5%);
@@ -90,11 +88,10 @@
     .info__item {
       padding-bottom: $base-gap*5;
       width: 100%;
-    }
 
-    .info__idx {
-      font-size: 120px;
-      top: -25px;
+      &:last-child {
+        padding-bottom: 0;
+      }
     }
   }
 }
