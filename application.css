@@ -53,16 +53,16 @@
   list-style: none;
 }
 
-/* line 25, styles/helpers/_placeholders.scss */
+/* line 12, styles/helpers/_placeholders.scss */
 .map img {
   max-width: none;
 }
-/* line 29, styles/helpers/_placeholders.scss */
+/* line 16, styles/helpers/_placeholders.scss */
 .map label {
   display: inline;
   font-size: 14px;
 }
-/* line 34, styles/helpers/_placeholders.scss */
+/* line 21, styles/helpers/_placeholders.scss */
 .map .gm-style-cc {
   line-height: normal;
 }
@@ -696,7 +696,7 @@ sup {
 }
 /* line 7, styles/modules/_cookies-bar.scss */
 .cookies-bar {
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
   font-size: 14px;
   background: #2b2d2e;
   color: #959696;
@@ -1009,16 +1009,6 @@ sup {
 /* line 54, styles/modules/_sections.scss */
 .section--offer .section__body {
   padding-bottom: 40px;
-}
-
-/* line 3, styles/helpers/_utilities.scss */
-.is-hidden {
-  display: none;
-}
-
-/* line 7, styles/helpers/_utilities.scss */
-.is-visible {
-  display: block;
 }
 
 @media screen and (max-width: 767px) {
