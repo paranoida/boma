@@ -696,7 +696,7 @@ sup {
 }
 /* line 7, styles/modules/_cookies-bar.scss */
 .cookies-bar {
-  padding: 20px 20px 50px 20px;
+  padding: 20px 50px 20px 20px;
   font-size: 14px;
   background: #2b2d2e;
   color: #959696;
