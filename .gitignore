@@ -5,4 +5,5 @@ dist/**/*
 .ruby-version
 bower_components
 app/bower_components
+app/application.css
 test/bower_components
