@@ -905,21 +905,21 @@ sup {
 /* line 3, styles/modules/_nav.scss */
 .nav {
   position: absolute;
-  top: 38px;
+  top: 28px;
   right: 40px;
 }
 
-/* line 14, styles/modules/_nav.scss */
+/* line 13, styles/modules/_nav.scss */
 .nav__item {
   display: inline-block;
-  padding-left: 70px;
+  padding-left: 50px;
 }
-/* line 18, styles/modules/_nav.scss */
+/* line 17, styles/modules/_nav.scss */
 .nav__item:first-child {
   padding-left: 0;
 }
 
-/* line 23, styles/modules/_nav.scss */
+/* line 22, styles/modules/_nav.scss */
 .nav__link {
   -webkit-transition: border 0.25s;
   transition: border 0.25s;
@@ -931,17 +931,42 @@ sup {
   text-transform: uppercase;
   outline: none;
 }
-/* line 33, styles/modules/_nav.scss */
+/* line 32, styles/modules/_nav.scss */
 .nav__link:hover {
   text-decoration: none;
   color: #ffffff;
   border-bottom-color: rgba(255, 255, 255, 0.5);
 }
 
+/* line 39, styles/modules/_nav.scss */
+.nav__link--shop {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  padding: 10px;
+}
+/* line 44, styles/modules/_nav.scss */
+.nav__link--shop:hover {
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 @media screen and (max-width: 1024px) {
-  /* line 43, styles/modules/_nav.scss */
+  /* line 54, styles/modules/_nav.scss */
   .nav__item {
-    padding-left: 50px;
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 60, styles/modules/_nav.scss */
+  .nav {
+    position: static;
+    margin-top: 30px;
+  }
+
+  /* line 65, styles/modules/_nav.scss */
+  .nav__item {
+    display: block;
+    padding: 10px 0;
   }
 }
 /* line 3, styles/modules/_products.scss */
@@ -1013,7 +1038,7 @@ sup {
 
 @media screen and (max-width: 767px) {
   /* line 21, styles/helpers/_placeholders-rwd.scss */
-  .nav, .products {
+  .products {
     display: none;
   }
 }
