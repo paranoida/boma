@@ -1,9 +1,8 @@
 // --- nav --------------------------------------------------------------------
 
 .nav {
-  @extend %hidden-phone;
   position: absolute;
-  top: 38px;
+  top: 28px;
   right: 40px;
 }
 
@@ -13,7 +12,7 @@
 
 .nav__item {
   display: inline-block;
-  padding-left: $base-gap*7;
+  padding-left: $base-gap*5;
 
   &:first-child {
     padding-left: 0;
@@ -37,10 +36,34 @@
   }
 }
 
+.nav__link--shop {
+  border: 1px solid rgba($color-white, .5);
+  border-radius: 4px;
+  padding: $base-gap;
+
+  &:hover {
+    border-color: $color-white;
+    background-color: rgba($color-white, .1);
+  }
+}
+
+
 // --- media queries ----------------------------------------------------------
 
 @include max-screen($breakpoint-large) {
   .nav__item {
-    padding-left: $base-gap*5;
+    padding-left: $base-gap*3;
+  }
+}
+
+@include max-screen($breakpoint-small) {
+  .nav {
+    position: static;
+    margin-top: $base-gap*3;
+  }
+
+  .nav__item {
+    display: block;
+    padding: $base-gap 0;
   }
 }
