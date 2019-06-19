@@ -28,5 +28,9 @@
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
   }
 }
